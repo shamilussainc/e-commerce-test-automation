@@ -1,0 +1,8 @@
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="e-commerce test automation">
+        <classes>
+            <class name="EcommerceTest"/>
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,8 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="e-commerce test automation">
+    <test enabled="false" verbose="2" preserve-order="true" name="e-commerce test automation">
         <classes>
-            <class name="EcommerceTest"/>
             <class name="LoginTest"/>
+        </classes>
+    </test>
+    <test name="specific test methods validation" enabled="true">
+        <classes>
+            <class name="LoginTest">
+                <methods>
+                    <include name="loginwithNoPasswordNoUsername"/>
+                    <include name="loginWithoutUserNameWithInvalidPassword"/>
+                    <include name="loginWithoutUserNameWithValidPassword"/>
+                    <include name="loginWithInvalidUsernameWithoutPassword"/>
+                    <include name="loginWithInvalidUsernameInvalidPassword"/>
+                    <include name="loginWithInvalidUsernameValidPassword"/>
+                    <include name="loginWithValidUsernameWithoutPassword"/>
+                    <include name="loginWithValidUsernameInvalidPassword"/>
+                    <include name="loginWithValidUsernameAndPassword"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

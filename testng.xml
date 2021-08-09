@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="All Test Suite">
-    <test enabled="false" verbose="2" preserve-order="true" name="e-commerce test automation">
+    <test enabled="true" verbose="2" preserve-order="true" name="e-commerce test automation">
         <classes>
-            <class name="LoginTest"/>
+            <class name="CartTest"/>
         </classes>
     </test>
-    <test name="specific test methods validation" enabled="true">
+    <test name="login test suite" enabled="false">
         <classes>
             <class name="LoginTest">
                 <methods>
